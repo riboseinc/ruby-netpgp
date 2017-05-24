@@ -1,6 +1,6 @@
 # ruby-netpgp
 
-ruby-netpgp is a Ruby wrapper for libnetpgp/rnp.
+ruby-netpgp is a Ruby wrapper for [libnetpgp](http://netpgp.com).
 
 # Overview
 The code is split in to two main modules.
