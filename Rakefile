@@ -1,17 +1,9 @@
-require 'rubygems'
-require 'rake'
+# frozen_string_literal: true
+
+require 'bundler/gem_tasks'
 require 'rspec/core/rake_task'
 
-desc 'Run rspec'
+RSpec::Core::RakeTask.new(:spec)
 
-RSpec::Core::RakeTask.new do |t|
-  t.verbose = true
-end
-
-desc 'Run specs'
-task :spec_all do
-  system 'rake spec'
-end
-
-task :default => :spec
+task default: :spec
 
